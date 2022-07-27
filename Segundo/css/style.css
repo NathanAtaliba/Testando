@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.conteudo{
+    position: relative;
+    background-color: red;
+    color: #fff;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin:0 auto;
+}
+.button{
+    border:1px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: blueviolet;
+    
+}
+.saida{
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top:5rem;
+    left:30%;
+}
