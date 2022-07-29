@@ -1,5 +1,5 @@
 function reload(){
-    var horas = 17;
+    var horas = 19;
     var texto = window.document.getElementById("texto");
     var imagem = window.document.getElementById("imagem");
     var body = window.document.getElementById("body");

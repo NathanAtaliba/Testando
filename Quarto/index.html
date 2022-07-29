@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+    <title>Exercicio idade</title>
+</head>
+<body>
+<section>Verificador de idades:</section>
+<header>
+<div class="plano">
+    <div class="texto">
+<p>Ano de Nascimento:
+    <input type="number" id="ano">
+</p>
+<p>Sexo:
+<input type="radio" id="masculino" name="nome" checked>
+<label for="masculino">Masculino</label>
+</input>
+<input type="radio" id="feminino" name="nome" >
+<label for="feminino">Feminino</label>
+</input>
+</p>    
+<input type="button" class="button" id="button" onclick="verificar()" value="Verificar"></input>
+<div class="cor" id="cor">
+    <p id="msg" class="msg"></p>
+</div>
+    </div>
+</div>
+<div class="Idoso">Idoso</div>
+<div class="Adulto">Adulto</div>
+<div class="Adolescente">Adolescente</div>
+<div class="Criança">Criança</div>
+</header>
+</body>
+<script src="JS/script.js"></script>
+</html>
