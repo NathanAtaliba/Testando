@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+}
+.apr{
+    background-color: rgb(51, 124, 146);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.home{
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 1rem;
+}
+.home:hover{
+    color: blue;
+}
+.bio{
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 1rem;
+}
+.bio:hover{
+    color: blue;
+}
+.agenda{
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 1rem;
+}
+.agenda:hover{
+    color: blue;
+}
+.contatos{
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.contatos:hover{
+    color: blue;
+}
+section{
+background-color: rgb(33, 63, 161);
+position: relative;
+width: 100%;
+height: 100vh;
+
+}

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{    
+background-color:rgb(94, 33, 91);
+text-align: center;
+width: 100%;
+height: 100%;
+}
+section{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    font-size: 3rem;
+    color: #fff;
+    top:5rem;
+}
+.titulo{
+    border-bottom:2px solid #fff;
+    font-weight: 1000;
+    
+}
+.peso{
+    font-size: 2rem;
+}
+.altura{
+    font-size: 2rem;
+   margin-bottom: 10px;
+}
+.resultado{
+    background: transparent;
+    color: #fff;
+}
+.button{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    padding:1rem ;
+    font-size: 3rem;
+    cursor:pointer;
+}
+.button:hover{
+    background-color: black;
+}
