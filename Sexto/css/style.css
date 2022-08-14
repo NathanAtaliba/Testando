@@ -2,54 +2,48 @@
     margin:0;
     padding:0;
 }
-.apr{
-    background-color: rgb(51, 124, 146);
-    width: 100%;
-    height: 100px;
-    position: relative;
-    text-align: center;
-    font-size: 2rem;
-    
-}
+
 .home{
-    background-color: transparent;
+    background-color: gray;
     border: none;
     font-size: 3rem;
     cursor: pointer;
-    margin-right: 40px;
-    margin-top: 1rem;
+    width: 25%;
+    height: 100%;
 }
 .home:hover{
     color: blue;
 }
-.bio{
-    background-color: transparent;
+.apresentacao{
+    background-color: red;
     border: none;
     font-size: 3rem;
     cursor: pointer;
-    margin-right: 40px;
-    margin-top: 1rem;
+    width: 25%;
+    height: 100%;
+    
 }
-.bio:hover{
+.apresentacao:hover{
     color: blue;
 }
-.agenda{
-    background-color: transparent;
+.projetos{
+    background-color: green;
     border: none;
     font-size: 3rem;
     cursor: pointer;
-    margin-right: 40px;
-    margin-top: 1rem;
+    width: 25%;
+    height: 100%;
 }
-.agenda:hover{
+.projetos:hover{
     color: blue;
 }
 .contatos{
-    background-color: transparent;
+    background-color: aquamarine;
     border: none;
     font-size: 3rem;
     cursor: pointer;
-    margin-top: 1rem;
+    width: 25%;
+    height: 100%;
 }
 .contatos:hover{
     color: blue;
@@ -59,5 +53,4 @@ background-color: rgb(33, 63, 161);
 position: relative;
 width: 100%;
 height: 100vh;
-
 }
