@@ -1,17 +1,28 @@
+var mm = 0
+var ss = 0
+var contadore = 0
 function iniciar(){
-var numero = document.getElementById("numero")
-
-
-for(let i=0;i<100;i++)
-numero.innerHTML = Number(numero.innerHTML)+ 1.000
-console.log(numero.innerHTML)
-
+contadore = setInterval(contador,100)
 }
 function reset(){
-    var numero = document.getElementById("numero")
-    numero.innerHTML = 0.000
+    mm = document.getElementById("mm")
+    ss = document.getElementById("ss")
+    mm.innerHTML = '00'
+    ss.innerHTML = '00'
+
 }
 function parar(){
-    parar = 1
-    console.log(parar)
+   clearInterval(contadore)
 }
+function contador(){
+    mm = document.getElementById("mm")
+    ss = document.getElementById("ss")
+if(Number(ss.innerHTML)>59){
+ mm.innerHTML = Number(mm.innerHTML) +1
+ ss.innerHTML = 0
+ console.log(mm.innerHTML)
+}
+else{
+ss.innerHTML = Number(ss.innerHTML)+1
+
+}}
