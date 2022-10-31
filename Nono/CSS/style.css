@@ -61,3 +61,8 @@
     position: relative;
     font-size: 8rem;
 }
+.texto{
+    position: relative;
+    font-size: 4rem;
+    top:4rem
+}

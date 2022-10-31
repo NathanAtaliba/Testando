@@ -2,7 +2,10 @@ var mm = 0
 var ss = 0
 var contadore = 0
 function iniciar(){
-contadore = setInterval(contador,100)
+var texto = document.getElementById("texto")
+    contadore = setInterval(contador,100)
+    texto.innerHTML = 'Contando'
+
 }
 function reset(){
     mm = document.getElementById("mm")
@@ -12,7 +15,9 @@ function reset(){
 
 }
 function parar(){
-   clearInterval(contadore)
+    var texto = document.getElementById("texto")
+    clearInterval(contadore)
+    texto.innerHTML = 'Parado'
 }
 function contador(){
     mm = document.getElementById("mm")
