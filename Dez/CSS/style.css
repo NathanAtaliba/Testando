@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration-line:line-through;
+    text-shadow: 5px 5px #ffffff;
+    position: relative;
+}
+.PONT{
+    top:20rem;
+    right: 40rem;
+    text-align: center;
+    position: relative;
+    font-size: 4rem;
+    text-decoration: none;
+    text-shadow: none;
+    text-decoration-line: none;
+}
+
+.reset{
+    font-size: 5rem;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 20px;
+    left: 65rem;
+    top:8rem;
+    background-color: black;
+    color: #ffffff;
+}   
+.reset:hover{
+    background-color: red;
+}
+.start{
+    font-size: 5rem;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 20px;
+    left: 85rem;
+    top:20rem;
+    background-color: black;
+    color: #ffffff;
+}
+.start:hover{
+    background-color: green;
+}
+.fundo{
+    background-color: #555;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+table{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    border: 4px solid white;
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%); 
+    background-color: black;
+    border-radius: 20px; 
+}
+tr,td{
+    color: #ffffff;
+    padding: 1px;
+    border-radius: 20px;
+    position: relative;
+    border: 2px solid transparent;
+}
+.n1,.n2,.n3,.n4,.n5,.n6,.n7,.n8,.n9,.n10,.n11,.n12,.n13,.n14,.n15,.n16,.n17,.n18,.n19,.n20,.n21,.n22,.n23,.n24,.n25{
+background-color: red;
+border-radius: 20px;
+padding: 50px;
+cursor: pointer;
+position: relative;
+}
+td:hover{
+    background-color: white;
+    border: 2px solid black
+}
+
