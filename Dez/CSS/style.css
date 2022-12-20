@@ -88,4 +88,24 @@ td:hover{
     background-color: white;
     border: 2px solid black
 }
+.mensagem1{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    font-size: 10rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.mensagem2{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    font-size: 10rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 
