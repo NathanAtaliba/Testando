@@ -108,4 +108,39 @@ td:hover{
     top: 50%;
     transform: translate(-50%,-50%);
 }
+.LOST{
+    top:20rem;
+    right: 40rem;
+    text-align: center;
+    position: relative;
+    font-size: 4rem;
+    text-decoration: none;
+    text-shadow: none;
+    text-decoration-line: none;
+}
+.WIN{
+    top:20rem;
+    right: 40rem;
+    text-align: center;
+    position: relative;
+    font-size: 4rem;
+    text-decoration: none;
+    text-shadow: none;
+    text-decoration-line: none;
+}
+.button{   
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white ;
+    cursor: pointer;
+    left: 5rem;
+    top:20rem;
+}
+button:hover{
+    background-color: red;
+}
 

@@ -1,3 +1,10 @@
+function winLost(){
+    var win = document.getElementById("vitoria") ;
+    var lost = document.getElementById("derrota");
+    win.innerHTML = 0;
+    lost.innerHTML = 0;
+
+}
 function colocarBomba(){
     var n1 = document.getElementById("n1")
     var n2 = document.getElementById("n2")
@@ -65,6 +72,8 @@ function conferir(numero){
     var contagem = document.getElementById("pontuacao");
     var mensagem1 = document.getElementById("mensagem1");
     var mensagem2 = document.getElementById("mensagem2");
+    var win = document.getElementById("vitoria");
+    var lost = document.getElementById("derrota");
     switch (numero){
     case '1':
         console.log(n1.value);
@@ -76,9 +85,14 @@ function conferir(numero){
                 console.log("Mensagem desapareceu");
                 mensagem1.style.display="none";
             },1000);
-
+        lost.innerHTML = Number(lost.innerHTML)+1;
         }else if(n1.value==0){
             contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+            if(Number(contagem.innerHTML) == 7 ){
+                win.innerHTML = Number(win.innerHTML)+1;
+                window.alert("VOCE VENCEU!");
+                reset();
+            }else{
             mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -86,7 +100,7 @@ function conferir(numero){
             },1000);
             n1.style.backgroundColor = 'BLACK';
             n1.value = 4;
-        }else if(n1.value==4){
+        }}else if(n1.value==4){
             window.alert("Espaço em branco");
         }
         else{
@@ -103,8 +117,14 @@ function conferir(numero){
                 console.log("Mensagem desapareceu");
                 mensagem1.style.display="none";
             },1000);
+            lost.innerHTML = Number(lost.innerHTML)+1;
         }else if(n2.value==0){
             contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+            if(Number(contagem.innerHTML) == 7 ){
+                win.innerHTML = Number(win.innerHTML)+1;
+                window.alert("VOCE VENCEU!");
+                reset();
+            }else{
             mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -112,7 +132,7 @@ function conferir(numero){
             },1000);
             n2.style.backgroundColor = 'BLACK';  
             n2.value = 4;
-        }else if(n2.value==4){
+        }}else if(n2.value==4){
             window.alert("Espaço em branco");
         }else{
             window.alert("DE START NO JOGO!!"); 
@@ -128,8 +148,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n3.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -137,7 +163,7 @@ function conferir(numero){
             },1000);
         n3.style.backgroundColor = 'BLACK'; 
         n3.value = 4;
-    }else if(n3.value==4){
+    }}else if(n3.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -153,8 +179,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n4.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -162,7 +194,7 @@ function conferir(numero){
             },1000);
         n4.style.backgroundColor = 'BLACK';
         n4.value = 4;
-    }else if(n4.value==4){
+    }}else if(n4.value==4){
         window.alert("Espaço em branco");
     }
         else{
@@ -179,8 +211,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n5.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -188,7 +226,7 @@ function conferir(numero){
             },1000);
         n5.style.backgroundColor = 'BLACK';
         n5.value = 4;
-    }else if(n5.value==4){
+    }}else if(n5.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -204,8 +242,14 @@ function conferir(numero){
                 console.log("Mensagem desapareceu");
                 mensagem1.style.display="none";
             },1000);
+            lost.innerHTML = Number(lost.innerHTML)+1;
         }else if(n6.value==0){
             contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+            if(Number(contagem.innerHTML) == 7 ){
+                win.innerHTML = Number(win.innerHTML)+1;
+                window.alert("VOCE VENCEU!");
+                reset();
+            }else{
             mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -213,7 +257,7 @@ function conferir(numero){
             },1000); 
             n6.style.backgroundColor = 'BLACK';
             n6.value = 4;
-        }else if(n6.value==4){
+        }}else if(n6.value==4){
             window.alert("Espaço em branco");
         }else{
             window.alert("DE START NO JOGO!!"); 
@@ -229,8 +273,14 @@ function conferir(numero){
                 console.log("Mensagem desapareceu");
                 mensagem1.style.display="none";
             },1000);
+            lost.innerHTML = Number(lost.innerHTML)+1;
         }else if(n7.value==0){
             contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+            if(Number(contagem.innerHTML) == 7 ){
+                win.innerHTML = Number(win.innerHTML)+1;
+                window.alert("VOCE VENCEU!");
+                reset();
+            }else{
             mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -238,7 +288,7 @@ function conferir(numero){
             },1000);
             n7.style.backgroundColor = 'BLACK';
             n7.value = 4;
-        }else if(n7.value==4){
+        }}else if(n7.value==4){
             window.alert("Espaço em branco");
         }else{
             window.alert("DE START NO JOGO!!"); 
@@ -254,8 +304,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n8.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
         setTimeout(function Acertou(){
             console.log("Mensagem desapareceu");
@@ -263,7 +319,7 @@ function conferir(numero){
         },1000);
         n8.style.backgroundColor = 'BLACK';
         n8.value = 4;
-    }else if(n8.value==4){
+    }}else if(n8.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -279,8 +335,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n9.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -288,7 +350,7 @@ function conferir(numero){
             },1000);
         n9.style.backgroundColor = 'BLACK';
         n9.value = 4;
-    }else if(n9.value==4){
+    }}else if(n9.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -304,8 +366,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n10.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -313,7 +381,7 @@ function conferir(numero){
             },1000);
         n10.style.backgroundColor = 'BLACK';
         n10.value = 4;
-    }else if(n10.value==4){
+    }}else if(n10.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -329,8 +397,14 @@ function conferir(numero){
                 console.log("Mensagem desapareceu");
                 mensagem1.style.display="none";
             },1000);
+            lost.innerHTML = Number(lost.innerHTML)+1;
         }else if(n11.value==0){
             contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+            if(Number(contagem.innerHTML) == 7 ){
+                win.innerHTML = Number(win.innerHTML)+1;
+                window.alert("VOCE VENCEU!");
+                reset();
+            }else{
             mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -338,7 +412,7 @@ function conferir(numero){
             },1000);
             n11.style.backgroundColor = 'BLACK';
             n11.value = 4;
-        }else if(n11.value==4){
+        }}else if(n11.value==4){
             window.alert("Espaço em branco");
         }else{
             window.alert("DE START NO JOGO!!"); 
@@ -354,8 +428,14 @@ function conferir(numero){
                 console.log("Mensagem desapareceu");
                 mensagem1.style.display="none";
             },1000);
+            lost.innerHTML = Number(lost.innerHTML)+1;
         }else if(n12.value==0){
             contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+            if(Number(contagem.innerHTML) == 7 ){
+                win.innerHTML = Number(win.innerHTML)+1;
+                window.alert("VOCE VENCEU!");
+                reset();
+            }else{
             mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -363,7 +443,7 @@ function conferir(numero){
             },1000); 
             n12.style.backgroundColor = 'BLACK';
             n12.value = 4;
-        }else if(n12.value==4){
+        }}else if(n12.value==4){
             window.alert("Espaço em branco");
         }else{
             window.alert("DE START NO JOGO!!"); 
@@ -379,8 +459,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n13.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -388,7 +474,7 @@ function conferir(numero){
             },1000);
         n13.style.backgroundColor = 'BLACK'; 
         n13.value = 4;
-    }else if(n13.value==4){
+    }}else if(n13.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -404,8 +490,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n14.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -413,7 +505,7 @@ function conferir(numero){
             },1000);
         n14.style.backgroundColor = 'BLACK'; 
         n14.value = 4;
-    }else if(n14.value==4){
+    }}else if(n14.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -429,8 +521,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n15.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -438,7 +536,7 @@ function conferir(numero){
             },1000); 
         n15.style.backgroundColor = 'BLACK';
         n15.value = 4;
-    }else if(n15.value==4){
+    }}else if(n15.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -454,8 +552,14 @@ function conferir(numero){
                 console.log("Mensagem desapareceu");
                 mensagem1.style.display="none";
             },1000);
+            lost.innerHTML = Number(lost.innerHTML)+1;
         }else if(n16.value==0){
             contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+            if(Number(contagem.innerHTML) == 7 ){
+                win.innerHTML = Number(win.innerHTML)+1;
+                window.alert("VOCE VENCEU!");
+                reset();
+            }else{
             mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -463,7 +567,7 @@ function conferir(numero){
             },1000); 
             n16.style.backgroundColor = 'BLACK';
             n16.value = 4;
-        }else if(n16.value==4){
+        }}else if(n16.value==4){
             window.alert("Espaço em branco");
         }else{
             window.alert("DE START NO JOGO!!"); 
@@ -481,6 +585,11 @@ function conferir(numero){
             },1000);
         }else if(n17.value==0){
             contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+            if(Number(contagem.innerHTML) == 7 ){
+                win.innerHTML = Number(win.innerHTML)+1;
+                window.alert("VOCE VENCEU!");
+                reset();
+            }else{
             mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -488,7 +597,7 @@ function conferir(numero){
             },1000);
             n17.style.backgroundColor = 'BLACK';
             n17.value = 4;
-        }else if(n17.value==4){
+        }}else if(n17.value==4){
             window.alert("Espaço em branco");
         }else{
             window.alert("DE START NO JOGO!!"); 
@@ -504,8 +613,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n18.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -513,7 +628,7 @@ function conferir(numero){
             },1000);
         n18.style.backgroundColor = 'BLACK';
         n18.value = 4;
-    }else if(n18.value==4){
+    }}else if(n18.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -529,8 +644,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n19.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -538,7 +659,7 @@ function conferir(numero){
             },1000);
         n19.style.backgroundColor = 'BLACK';
         n19.value = 4;
-    }else if(n19.value==4){
+    }}else if(n19.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -554,8 +675,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n20.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -563,7 +690,7 @@ function conferir(numero){
             },1000);
         n20.style.backgroundColor = 'BLACK'; 
         n20.value = 4;
-    }else if(n20.value==4){
+    }}else if(n20.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -579,8 +706,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n21.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -588,7 +721,7 @@ function conferir(numero){
             },1000);
         n21.style.backgroundColor = 'BLACK';
         n21.value = 4;
-    }else if(n21.value==4){
+    }}else if(n21.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -604,8 +737,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n22.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -613,7 +752,7 @@ function conferir(numero){
             },1000);
         n22.style.backgroundColor = 'BLACK';
         n22.value = 4;
-    }else if(n22.value==4){
+    }}else if(n22.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -629,8 +768,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n23.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -638,7 +783,7 @@ function conferir(numero){
             },1000);
         n23.style.backgroundColor = 'BLACK'; 
         n23.value = 4;
-    }else if(n23.value==4){
+    }}else if(n23.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -654,8 +799,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n24.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -663,7 +814,7 @@ function conferir(numero){
             },1000);
         n24.style.backgroundColor = 'BLACK';
         n24.value = 4;
-    }else if(n24.value==4){
+    }}else if(n24.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
@@ -679,8 +830,14 @@ function conferir(numero){
             console.log("Mensagem desapareceu");
             mensagem1.style.display="none";
         },1000);
+        lost.innerHTML = Number(lost.innerHTML)+1;
     }else if(n25.value==0){
         contagem.innerHTML = Number(contagem.innerHTML)+1 ;
+        if(Number(contagem.innerHTML) == 7 ){
+            win.innerHTML = Number(win.innerHTML)+1;
+            window.alert("VOCE VENCEU!");
+            reset();
+        }else{
         mensagem2.style.display="block";
             setTimeout(function Acertou(){
                 console.log("Mensagem desapareceu");
@@ -688,14 +845,13 @@ function conferir(numero){
             },1000); 
         n25.style.backgroundColor = 'BLACK';
         n25.value = 4;
-    }else if(n25.value==4){
+    }}else if(n25.value==4){
         window.alert("Espaço em branco");
     }else{
         window.alert("DE START NO JOGO!!"); 
     }
         break;           
-    } 
-}
+    }}
 function reset(){
     var n1 = document.getElementById("n1")
     var n2 = document.getElementById("n2")
@@ -774,7 +930,5 @@ function reset(){
    n24.value = 3;
    n25.value = 3;
    var contagem = document.getElementById("pontuacao");
-   contagem.innerHTML = 0;
-
-   
+   contagem.innerHTML = 0;  
 }
