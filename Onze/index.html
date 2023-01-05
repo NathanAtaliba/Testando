@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+<div class="fundo">
+<form class="form">
+   <h1 class="titulo">Enter with your data</h1>
+   <div class="texto"> 
+   <p>Name</p><input type="text" class="text" id="nome"></input>
+   <p>password</p><input type ="password" class="password" id="password"></input>
+   <p>Email</p><input type="email" class="email" id="email"></input><br>
+   <label>Sex: </label><input type="radio" name="sex" class="sex" checked>Male</input> <input type="radio" name="sex" class="sex" >Female</input>
+   <p>Available hours: </p><input type="checkbox" class="checkbox">8h até 12h </input><br><input type="checkbox" class="checkbox">1h até 5h</input><br>
+</div>
+   <button type="button" class="register" onclick="register()">Register</button>
+   <button type="button" class="delete" onclick="deleteData()">Delete Data</button>
+</form> 
+</div>
+<script src="JS/script.js"></script>
+</body>
+</html>

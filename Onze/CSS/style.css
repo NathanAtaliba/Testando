@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.fundo{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+width: 100%;
+height: 100vh;
+}
+.form{
+
+    color:white;
+    position: absolute;
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%,-50%);
+    border-radius: 100px;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 1.6rem;
+}
+.titulo{
+    font-size: 2.5rem;
+}
+.text{
+height: 30px;
+width: 300px;
+font-size: 1.5rem;
+}
+.password{
+height: 30px;
+width: 300px;
+font-size: 1.5rem;
+}
+.email{
+height: 30px;
+width: 300px;
+font-size: 1.5rem;
+}
+.checkbox{
+    height: 15px;
+    width: 15px;
+}
+.sex{
+    height: 15px;
+    width: 15px; 
+}
+
+.register{
+color: white;
+font-size: 2rem;
+border-radius: 50px;
+background: rgba(0,0,0,0.3);
+border: none;
+padding: 20px;
+}
+.register:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.6);
+}
+.delete{
+color: white;
+font-size: 2rem;
+border-radius: 50px;
+border: none;
+background: rgba(0,0,0,0.3);
+padding: 20px;
+}
+.delete:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.6);
+}
