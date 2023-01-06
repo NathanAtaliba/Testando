@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 .fundo{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 width: 100%;
 height: 100vh;
 }
@@ -74,3 +74,183 @@ padding: 20px;
     cursor: pointer;
     background-color: rgba(0,0,0,0.6);
 }
+/* mobile */
+@media (max-width: 500px) {
+    .titulo{
+        font-size: 1rem;
+    }
+    .form {
+        color:white;
+        border: none;
+        padding: 10px;
+        left: 50%;
+        top: 50vh;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 300px;
+        font-size: 0.8rem;
+        border-radius: 10px;
+    }
+    .delete{
+        color: white;
+        font-size: 1rem;
+        border-radius: 50px;
+        border: none;
+        background: rgba(0,0,0,0.3);
+        padding: 20px;
+        } 
+        .register{
+            color: white;
+            font-size: 1rem;
+            border-radius: 50px;
+            background: rgba(0,0,0,0.3);
+            border: none;
+            padding: 20px;
+            }
+            .checkbox{
+                height: 10px;
+                width: 10px;
+            }
+            .sex{
+                height: 10px;
+                width: 10px; 
+            }
+            .text{
+                height: 30px;
+                width: 200px;
+                font-size: 1.5rem;
+                }
+                .password{
+                height: 30px;
+                width: 200px;
+                font-size: 1.5rem;
+                }
+                .email{
+                height: 30px;
+                width: 200px;
+                font-size: 1.5rem;
+                }
+        }
+/* tablets */
+@media (min-width: 501px) {
+    .titulo{    
+        font-size: 2rem;
+    }
+    .form {
+        color:white;
+        padding: 10px;
+        left: 50%;
+        top: 50vh;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 400px;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        border: none;
+    }
+    .delete{
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        border: none;
+        background: rgba(0,0,0,0.3);
+        padding: 20px;
+        } 
+        .register{
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            background: rgba(0,0,0,0.3);
+            border: none;
+            padding: 20px;
+            }
+            .checkbox{
+                height: 15px;
+                width: 15px;
+            }
+            .sex{
+                height: 15px;
+                width: 15px; 
+            }
+            .text{
+                height: 30px;
+                width: 300px;
+                font-size: 1.5rem;
+                }
+                .password{
+                height: 30px;
+                width: 300px;
+                font-size: 1.5rem;
+                }
+                .email{
+                height: 30px;
+                width: 300px;
+                font-size: 1.5rem;
+                }
+        }
+/* desktop */
+@media (min-width: 1024px) {
+    .form{
+
+        color:white;
+        position: absolute;
+        padding: 10px;
+        text-align: center;
+        left: 50%;
+        top: 50vh;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        width: 500px;
+        height: 500px;
+        background-color: rgba(0,0,0,0.4);
+        font-size: 1.6rem;
+    }
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .text{
+    height: 30px;
+    width: 300px;
+    font-size: 1.5rem;
+    }
+    .password{
+    height: 30px;
+    width: 300px;
+    font-size: 1.5rem;
+    }
+    .email{
+    height: 30px;
+    width: 300px;
+    font-size: 1.5rem;
+    }
+    .checkbox{
+        height: 15px;
+        width: 15px;
+    }
+    .sex{
+        height: 15px;
+        width: 15px; 
+    }
+   
+    .register{
+    color: white;
+    font-size: 2rem;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    padding: 20px;
+    }
+
+    .delete{
+    color: white;
+    font-size: 2rem;
+    border-radius: 50px;
+    border: none;
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    }
+    
+}
+    
