@@ -10,9 +10,9 @@ window.alert("Preencha todos os campos!");
 }
 else{
     
-    console.log("nome: " + nome.value);
-    console.log("Senha: " + password.value);
-    console.log("Email: " + email.value);
+    console.log(" nome: " + nome.value);
+    console.log(" Senha: " + password.value);
+    console.log(" Email: " + email.value);
 
 }
 }
