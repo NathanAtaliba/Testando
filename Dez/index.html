@@ -13,13 +13,18 @@
     <div class="fundo">
         <div class="titulo">
         <h1>GAME OF BOMB</h1>
-        </div>
+        </div> 
+        <div class = "botoes">
         <h1 class="WIN">WIN: <label class="vitoria" id="vitoria">0</label>
         <h1 class="LOST">LOST: <label class="derrota" id="derrota">0</label>
         <h1 class="PONT">POINTS: <label class="pontuacao" id="pontuacao">0</label></h1>
-        <button type="text" class="button" onclick="winLost()">RESET WIN/LOST</button>
+        <div class="embaixo">
+        <button type="text" class="button" onclick="winLost()">RESET W/L</button>
         <button class="start" id="start" onclick="colocarBomba()">START</button>
         <button class="reset" id="reset" onclick="reset()">RESET</button>
+        </div>
+
+    </div>
         <table>
     <tr>
         <td><button type="button" class="n1" id="n1" value="3" onclick="conferir('1')"></button></td>

@@ -11,25 +11,22 @@
     position: relative;
 }
 .PONT{
-    top:20rem;
-    right: 40rem;
+   
     text-align: center;
     position: relative;
-    font-size: 4rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-shadow: none;
     text-decoration-line: none;
 }
 
 .reset{
-    font-size: 5rem;
+    font-size: 1rem;
     position: relative;
-    border-radius: 20px;
-    border: 2px solid black;
+    border-radius: 10px;
+    border: 1px solid black;
     cursor: pointer;
-    padding: 20px;
-    left: 65rem;
-    top:8rem;
+    padding: 10px;
     background-color: black;
     color: #ffffff;
 }   
@@ -37,14 +34,12 @@
     background-color: red;
 }
 .start{
-    font-size: 5rem;
+    font-size: 1rem;
     position: relative;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid black;
     cursor: pointer;
-    padding: 20px;
-    left: 85rem;
-    top:20rem;
+    padding: 10px;
     background-color: black;
     color: #ffffff;
 }
@@ -72,10 +67,10 @@ table{
 }
 tr,td{
     color: #ffffff;
-    padding: 1px;
-    border-radius: 20px;
+    border-radius: 10px;
     position: relative;
     border: 2px solid transparent;
+
 }
 .n1,.n2,.n3,.n4,.n5,.n6,.n7,.n8,.n9,.n10,.n11,.n12,.n13,.n14,.n15,.n16,.n17,.n18,.n19,.n20,.n21,.n22,.n23,.n24,.n25{
 background-color: red;
@@ -109,38 +104,232 @@ td:hover{
     transform: translate(-50%,-50%);
 }
 .LOST{
-    top:20rem;
-    right: 40rem;
+   
     text-align: center;
     position: relative;
-    font-size: 4rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-shadow: none;
     text-decoration-line: none;
 }
 .WIN{
-    top:20rem;
-    right: 40rem;
     text-align: center;
     position: relative;
-    font-size: 4rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-shadow: none;
     text-decoration-line: none;
-}
+}   
 .button{   
     text-align: center;
     position: relative;
-    font-size: 3rem;
-    border:2px solid black;
+    font-size: 1rem;
+    border:1px solid black;
     border-radius: 10px;
     background-color: black;
     color: white ;
     cursor: pointer;
-    left: 5rem;
-    top:20rem;
+    padding: 10px;
 }
 button:hover{
     background-color: red;
 }
+@media (max-width: 400px) {
+    .titulo{
+     font-size: 1rem;
+    text-align: center;
+    text-decoration-line:line-through;
+    text-shadow: 1px 1px #ffffff;
+    position: relative;
+    }
+    .botoes{
+        margin-top: 15px;
+        text-align: center;
+        position:absolute;
+        left: 50%;
+        top: 18%;
+        transform: translate(-50%,-50%);
+        font-size: 1rem;
+        flex-direction: column;
+        align-items:baseline;
+    }
+  
+    table{
+        border: 1px solid white;
+        font-size: 1rem;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%); 
+        background-color: black;
+        border-radius: 10px; 
+    }
+    .n1,.n2,.n3,.n4,.n5,.n6,.n7,.n8,.n9,.n10,.n11,.n12,.n13,.n14,.n15,.n16,.n17,.n18,.n19,.n20,.n21,.n22,.n23,.n24,.n25{
+        background-color: red;
+        border-radius: 10px;
+        padding: 20px;
+        cursor: pointer;
+        position: relative;
+        }
+        tr,td{
+            color: #ffffff;
+            border-radius: 10px;
+            position: relative;
+            
+        }
+        .mensagem1{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            color: white;
+            font-size: 5rem;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .mensagem2{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            color: white;
+            font-size: 5rem;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+       
+}
+@media (min-width: 401px) {
+    .titulo{
+        font-size: 2rem;
+       text-align: center;
+       text-decoration-line:line-through;
+       text-shadow: 1px 1px #ffffff;
+       position: relative;
+       }
+       .botoes{
+           margin-top: 40px;
+           text-align: center;
+           position:absolute;
+           left: 50%;
+           top: 18%;
+           transform: translate(-50%,-50%);
+           font-size: 2rem;
+           flex-direction: column;
+           align-items:baseline;
+       }
+     
+       table{
+           margin-top: 40px;
+           border: 1px solid white;
+           font-size:  1.5rem;
+           position: absolute;
+           left: 50%;
+           top:50%;
+           transform: translate(-50%,-50%); 
+           background-color: black;
+           border-radius: 10px; 
+       }
+       .n1,.n2,.n3,.n4,.n5,.n6,.n7,.n8,.n9,.n10,.n11,.n12,.n13,.n14,.n15,.n16,.n17,.n18,.n19,.n20,.n21,.n22,.n23,.n24,.n25{
+           background-color: red;
+           border-radius: 10px;
+           padding: 35px;
+           cursor: pointer;
+           position: relative;
+           }
+           tr,td{
+               color: #ffffff;
+               border-radius: 10px;
+               position: relative;
+               
+           }
+           .mensagem1{
+               display: none;
+               position: fixed;
+               z-index: 1;
+               color: white;
+               font-size: 5rem;
+               left: 50%;
+               top: 50%;
+               transform: translate(-50%,-50%);
+           }
+           .mensagem2{
+               display: none;
+               position: fixed;
+               z-index: 1;
+               color: white;
+               font-size: 5rem;
+               left: 50%;
+               top: 50%;
+               transform: translate(-50%,-50%);
+           }
 
+ }
+ @media (min-width: 1024px) {
+
+    .titulo{
+        font-size: 3rem;
+       text-align: center;
+       text-decoration-line:line-through;
+       text-shadow: 1px 1px #ffffff;
+       position: relative;
+       }
+       .botoes{
+        margin-top: 15px;
+           text-align: center;
+           position:absolute;
+           left: 50%;
+           top: 18%;
+           transform: translate(-50%,-50%);
+           font-size: 2rem;
+           flex-direction: column;
+           align-items:baseline;
+       }
+     
+       table{
+           margin-top: 80px;
+           border: 1px solid white;
+           font-size:  1.5rem;
+           position: absolute;
+           left: 50%;
+           top:50%;
+           transform: translate(-50%,-50%); 
+           background-color: black;
+           border-radius: 10px; 
+       }
+       .n1,.n2,.n3,.n4,.n5,.n6,.n7,.n8,.n9,.n10,.n11,.n12,.n13,.n14,.n15,.n16,.n17,.n18,.n19,.n20,.n21,.n22,.n23,.n24,.n25{
+           background-color: red;
+           border-radius: 10px;
+           padding: 40px;
+           cursor: pointer;
+           position: relative;
+           }
+           tr,td{
+               color: #ffffff;
+               border-radius: 10px;
+               position: relative;
+               
+           }
+           .mensagem1{
+               display: none;
+               position: fixed;
+               z-index: 1;
+               color: white;
+               font-size: 5rem;
+               left: 50%;
+               top: 50%;
+               transform: translate(-50%,-50%);
+           }
+           .mensagem2{
+               display: none;
+               position: fixed;
+               z-index: 1;
+               color: white;
+               font-size: 5rem;
+               left: 50%;
+               top: 50%;
+               transform: translate(-50%,-50%);
+           }
+
+
+ }
